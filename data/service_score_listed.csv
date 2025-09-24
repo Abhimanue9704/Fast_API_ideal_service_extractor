@@ -1,31 +1,31 @@
 name,role,company,intent,score,reasoning
-Ava Patel,Head of Growth,FlowMetrics,High,80,Fits ideal use case of B2B SaaS mid-market and has a decision-making role
-John Doe,Software Engineer,TechCorp,Low,20,Doesn't fit ideal use case (Healthcare IT instead of B2B SaaS) and lacks decision-making role
-Maria Lopez,Marketing Manager,SalesSphere,Medium,50,"Fits ideal use case (B2B SaaS) but role is influencer, not a decision-maker"
-David Kim,CTO,FinEdge,Low,30,"Although FinTech might tangentially benefit, the ideal use case is B2B SaaS mid-market, and the lead lacks a decision-making role"
-Sophia Rossi,Operations Lead,GreenBuild,Low,30,"Doesn't fit ideal use case (Construction instead of B2B SaaS mid-market), despite having an influencer role"
-Liam Chen,VP Sales,CloudNova,High,80,"Fits ideal use case (B2B SaaS) and role is decision maker, although 'enterprise' might differ slightly from 'mid-market'"
-Emma Johnson,HR Manager,HealthFirst,Low,20,Doesn't fit ideal use case (Healthcare instead of B2B SaaS mid-market) and lacks decision-making role
-Noah Williams,Chief Marketing Officer,AdReach,Medium,40,"Fits ideal use case (B2B SaaS), but lacks a specified decision-making role"
-Olivia Brown,Head of Partnerships,InsightAI,Medium,60,"Fits ideal use case (B2B SaaS, specifically AI SaaS which could align with mid-market needs), but role is influencer rather than decision maker"
-Ethan Davis,Product Manager,CodeWorks,Low,40,"While somewhat close, doesn't directly fit ideal use case (B2B SaaS mid-market specifics aren't clear), and role is influencer rather than decision maker"
-Isabella Garcia,Sales Director,MarketBoost,Medium,40,"Fits ideal use case (B2B SaaS), but lacks a specified decision-making role despite being in a sales leadership position"
-Mason Lee,CEO,GrowthLabs,Low,50,"While the lead is in a decision-making role, GrowthLabs is a consulting firm, not a B2B SaaS mid-market company"
-Amelia Martin,Data Analyst,HealthNet,Low,20,Doesn't fit ideal use case (Healthcare instead of B2B SaaS mid-market) and lacks decision-making role
-James Walker,VP Business Development,ScaleTech,High,80,Fits ideal use case (B2B SaaS mid-market) and role is decision maker
-Mia Thompson,Marketing Specialist,BuildRight,Low,30,Doesn't fit ideal use case (Construction instead of B2B SaaS mid-market)
-Alexander Scott,Head of Sales,InnovaCloud,Medium,40,"Fits ideal use case (B2B SaaS), but lacks a specified decision-making role despite being in a sales leadership position"
-Charlotte Evans,Operations Manager,FoodChain,Low,20,Doesn't fit ideal use case (Logistics instead of B2B SaaS mid-market) and lacks decision-making role
-Benjamin Carter,CTO,SecureNet,Low,20,"While in tech, SecureNet is more focused on cybersecurity rather than B2B SaaS mid-market, and lacks decision-making role"
-Ella White,Growth Marketing Lead,AutoScale,High,70,"Fits ideal use case (B2B SaaS) and role in growth aligns well with value props, despite being an influencer rather than decision maker"
-Henry Adams,Sales Executive,CloudSync,Medium,40,"Fits ideal use case (B2B SaaS), but lacks specified decision-making role"
-Grace Kim,Product Marketing Manager,NextGen,High,70,Fits ideal use case (B2B SaaS mid-market) and role in product marketing could influence purchasing decisions
-Samuel Thompson,CTO,FinSmart,Low,30,"While FinSmart operates in tech and serves B2B clients, its focus on FinTech rather than B2B SaaS mid-market reduces alignment, and lacks decision-making role"
-Chloe Brown,Head of Customer Success,HappyTech,High,70,Fits ideal use case (B2B SaaS) and role in customer success could influence purchasing decisions or provide valuable insights
-Daniel Martinez,Operations Director,BuildIt,Low,20,Doesn't fit ideal use case (Construction instead of B2B SaaS mid-market) and lacks decision-making role in a relevant context
-Sofia Wilson,VP Marketing,CloudScale,High,80,Fits ideal use case (B2B SaaS) and role is a decision maker in marketing
-Jack Robinson,Sales Lead,DataWave,Medium,50,"Fits ideal use case (B2B SaaS, specifically AI SaaS), but lacks specified decision-making role"
-Lily Evans,Software Engineer,HealthSync,Low,20,Doesn't fit ideal use case (Healthcare IT instead of B2B SaaS mid-market) and lacks decision-making role
-Ryan Scott,Chief Strategy Officer,TechForward,High,90,Fits ideal use case (SaaS clients) and role is a decision maker in a consulting capacity that aligns with SaaS growth
-Zoe Harris,Marketing Director,InnoTech,High,70,Fits ideal use case (B2B SaaS) and role in marketing could significantly influence purchasing decisions
-Owen Lewis,VP Sales,CloudWorks,High,80,"Fits ideal use case (B2B SaaS) and role is a decision maker in sales, although enterprise focus might slightly differ from mid-market"
+Ava Patel,Head of Growth,FlowMetrics,High,80,"Fits ideal use case of B2B SaaS mid-market, has a decision-making role, and is actively seeking solutions for pipeline growth and lead generation"
+John Doe,Software Engineer,TechCorp,Medium,40,"The lead's job description and company align with the ideal use case, but there's no clear indication of a decision-making role or a specific pain point that the value props address."
+Maria Lopez,Marketing Manager,SalesSphere,High,70,"Fits ideal use case of B2B SaaS mid-market, has a decision-making role as Marketing Manager, and has expertise in demand generation campaigns which aligns with the value props"
+David Kim,CTO,FinEdge,High,70,"Fits ideal use case of B2B SaaS mid-market, has a clear interest in AI-driven customer acquisition platforms, and is a CTO, indicating a high level of influence in technology strategy decisions."
+Sophia Rossi,Operations Lead,GreenBuild,High,70,"Fits ideal use case of B2B SaaS mid-market, has a decision-making role as Operations Lead, and is actively introducing digital project management tools, indicating a need for solutions like the one being offered"
+Liam Chen,VP Sales,CloudNova,High,80,"Fits ideal use case of B2B SaaS mid-market, has a decision-making role, and is actively scaling outbound operations with AI tools, indicating a strong need for the proposed value props"
+Emma Johnson,HR Manager,HealthFirst,High,60,"Fits ideal use case of B2B SaaS mid-market and has a clear understanding of pain points in healthcare HR operations, suggesting a need for solutions like the one being offered"
+Noah Williams,Chief Marketing Officer,AdReach,High,60,"Has a decision-making role as Chief Marketing Officer, is in the B2B SaaS industry, and is actively implementing AI-powered outreach platforms, indicating a strong need for the product's value props"
+Olivia Brown,Head of Partnerships,InsightAI,High,80,"Fits ideal use case of B2B SaaS mid-market, has a decision-making role as Head of Partnerships, and is actively managing strategic partnerships which suggests a need for solutions like the one being offered"
+Ethan Davis,Product Manager,CodeWorks,High,80,"Fits ideal use case of B2B SaaS mid-market, has a decision-making role as Product Manager, and is building developer productivity tools which aligns with the value props of 24/7 outreach and 6x more meetings"
+Isabella Garcia,Sales Director,MarketBoost,High,60,"Has a decision-making role as Sales Director, is familiar with SaaS sales teams, and is implementing data-driven outreach campaigns, indicating a high level of interest and potential need for the value props mentioned"
+Mason Lee,CEO,GrowthLabs,High,90,"Fits ideal use case of B2B SaaS mid-market, has a decision-making role as CEO, and is looking for consulting services that deliver measurable results, which aligns with the value props offered"
+Amelia Martin,Data Analyst,HealthNet,Medium,40,"The lead is a data analyst in a B2B SaaS mid-market company, which aligns with the ideal use case, but the role type is 'None' and the lead's job description doesn't explicitly indicate a decision-making role, making the intent less clear."
+James Walker,VP Business Development,ScaleTech,High,80,"Fits ideal use case of B2B SaaS mid-market, has a decision-making role, and is actively looking to leverage automation to create partnerships faster, indicating a need for the value props mentioned"
+Mia Thompson,Marketing Specialist,BuildRight,High,70,"Fits ideal use case of B2B SaaS mid-market, has a relevant role in marketing, and is actively running campaigns which suggests a need for the value props mentioned"
+Alexander Scott,Head of Sales,InnovaCloud,High,60,"Has a clear understanding of the ideal use case (B2B SaaS mid-market) and is actively building outbound sales strategies, indicating a high level of interest and potential need for the value props mentioned."
+Charlotte Evans,Operations Manager,FoodChain,High,60,"Fits ideal use case of B2B SaaS mid-market and has a clear pain point related to supply chain operations, indicating a potential need for a solution to improve efficiency and reduce delivery times."
+Benjamin Carter,CTO,SecureNet,High,60,Fits ideal use case of B2B SaaS mid-market and mentions specific value props (24/7 monitoring) that align with their company's offerings
+Ella White,Growth Marketing Lead,AutoScale,High,70,"Fits ideal use case of B2B SaaS mid-market, has a decision-making role as Growth Marketing Lead, and is actively seeking solutions to improve outreach speed and pipeline growth, aligning with the value props offered"
+Henry Adams,Sales Executive,CloudSync,High,60,"Fits ideal use case of B2B SaaS mid-market, has a sales executive role, and is actively looking for strategies to improve meeting conversion rates, indicating a strong interest in the value props offered."
+Grace Kim,Product Marketing Manager,NextGen,High,70,"Has a decision-making role as Product Marketing Manager, is focused on positioning SaaS products for mid-market clients, and is looking for quick adoption and ROI-driven messaging, indicating a strong need for the value props offered"
+Samuel Thompson,CTO,FinSmart,High,70,"Fits ideal use case of B2B SaaS mid-market, has a key role (CTO) in the company, and mentions building platforms for financial institutions, indicating a potential need for solutions like the ones offered by the company"
+Chloe Brown,Head of Customer Success,HappyTech,High,70,"Has a decision-making role as Head of Customer Success, is directly involved in managing customer success teams, and is looking to improve SaaS adoption rates, indicating a strong need for the value props offered"
+Daniel Martinez,Operations Director,BuildIt,High,60,"Fits ideal use case of B2B SaaS mid-market, has a relevant role in operations, and is likely interested in solutions that improve project delivery and team coordination"
+Sofia Wilson,VP Marketing,CloudScale,High,80,"Fits ideal use case of B2B SaaS mid-market, has a decision-making role as VP Marketing, and is actively driving growth marketing campaigns which aligns with the value props of 24/7 outreach and 6x more meetings for pipeline generation and lead quality."
+Jack Robinson,Sales Lead,DataWave,High,70,"Has a clear role in sales leadership and mentions accelerating client acquisition, indicating a need for efficient lead qualification and outreach solutions like the provided value props"
+Lily Evans,Software Engineer,HealthSync,Medium,40,"Lily Evans is a software engineer, which suggests she may be involved in the development process, but her role is not explicitly stated as a decision-maker, and her company's focus is on healthcare IT, which aligns with the ideal use case, but the value props don't directly relate to her company's goals."
+Ryan Scott,Chief Strategy Officer,TechForward,High,90,"Fits ideal use case of B2B SaaS mid-market, has a decision-making role, and is actively seeking strategic growth initiatives to accelerate revenue within 90 days"
+Zoe Harris,Marketing Director,InnoTech,High,70,"Fits ideal use case of B2B SaaS mid-market, has a decision-making role as Marketing Director, and is looking for measurable results which aligns with the value props provided"
+Owen Lewis,VP Sales,CloudWorks,High,80,"Fits ideal use case of B2B SaaS mid-market, has a decision-making role, and is actively looking to implement solutions for scaling outbound sales operations, which aligns with the value props provided."
