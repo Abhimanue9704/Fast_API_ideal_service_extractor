@@ -6,7 +6,7 @@ from meta_ai_api import MetaAI
 import json
 import re
             
-df = pd.read_csv("leads_30.csv")
+df = pd.read_csv("services.csv")
 
 app = FastAPI()
 
