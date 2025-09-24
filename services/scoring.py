@@ -1,19 +1,6 @@
-from fastapi import FastAPI
-from pydantic import BaseModel
-from typing import List
 import pandas as pd
-from meta_ai_api import MetaAI
-import json
 import re
-            
-df = pd.read_csv("services.csv")
-
-app = FastAPI()
-
-class Offer(BaseModel):
-    name: str
-    value_props: List[str]
-    ideal_use_cases: List[str]
+from meta_ai_api import MetaAI
 
 decision_maker_roles = [
     "CEO", "Chief Executive Officer", "Founder", "President",
@@ -30,27 +17,24 @@ influencer_roles = [
 
 adjacent_industries = ["FinTech", "AI SaaS", "Consulting", "Software", "Cloud", "Technology"]
 
-required_fields = ["name", "role", "company", "industry", "location", "linkedin_bio"]
-
-@app.post("/offer")
-async def offer(offer: Offer):
-    results = []
+def score_leads(df: pd.DataFrame, offer) -> pd.DataFrame:
     ai = MetaAI()
+    results = []
 
-    for index, row in df.iterrows():
+    for _, row in df.iterrows():
         rule_score = 0
         ai_points = 0
-        role_type=None
-        role = row["role"]
-        industry = row["industry"]
+        role_type = None
+        role = row.get("role", "")
+        industry = row.get("industry", "")
 
         # Role relevance
         if role:
             if role.strip().lower() in [r.lower() for r in decision_maker_roles]:
-                role_type="decision"
+                role_type = "decision"
                 rule_score += 20
             elif role.strip().lower() in [r.lower() for r in influencer_roles]:
-                role_type="influencer"
+                role_type = "influencer"
                 rule_score += 10
 
         # Industry match
@@ -64,7 +48,7 @@ async def offer(offer: Offer):
         if not row.isnull().any():
             rule_score += 10
 
-        # Example you want the LLM to follow
+        # AI prompt
         example_prompt = """
         User:
         "value_props": ["24/7 outreach", "6x more meetings"],
@@ -77,9 +61,7 @@ async def offer(offer: Offer):
         "reasoning": "Fits ICP SaaS mid-market and role is decision maker."
         """
 
-        # Current row info you want to classify
-        row_info = row.to_dict()  # assuming row is a pandas Series
-
+        row_info = row.to_dict()
         prompt = f"""
         {example_prompt}
 
@@ -88,7 +70,7 @@ async def offer(offer: Offer):
         User:
         "value_props": {offer.value_props},
         "ideal_use_cases": {offer.ideal_use_cases}
-        Lead: {row_info["name"]}, {row_info["role"]}, {row_info["company"]}, {row_info["industry"]}, {row_info["location"]}, "{row_info["linkedin_bio"]}"
+        Lead: {row_info.get("name")}, {row_info.get("role")}, {row_info.get("company")}, {row_info.get("industry")}, {row_info.get("location")}, "{row_info.get("linkedin_bio")}"
         Decision: {role_type}
 
         Assistant:
@@ -96,7 +78,6 @@ async def offer(offer: Offer):
 
         response = ai.prompt(message=prompt)
         llm_message = response.get("message", "")
-        print(llm_message)
 
         # Extract intent
         intent_match = re.search(r'"intent"\s*:\s*"(\w+)"', llm_message)
@@ -114,16 +95,15 @@ async def offer(offer: Offer):
         else:
             ai_points += 10
 
-    
         results.append({
-            "name": row["name"],
-            "role": row["role"],
-            "company": row["company"],
-            "intent" : intent,
-            "score" : rule_score+ai_points,
-            "reasoning" : reasoning
+            "name": row.get("name"),
+            "role": row.get("role"),
+            "company": row.get("company"),
+            "intent": intent,
+            "score": rule_score + ai_points,
+            "reasoning": reasoning
         })
 
-    res=pd.DataFrame(results)
-    res.to_csv("service_score_listed.csv",index=False)
-    
+    res_df = pd.DataFrame(results)
+    res_df.to_csv("data/service_score_listed.csv", index=False)
+    return res_df
